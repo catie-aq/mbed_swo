@@ -1,19 +1,23 @@
-# Serial Wire Output (SWO) viewer for tracing purposes
+# Serial Wire Output (SWO) Library
 
-- Example :
+Usage:
   
-  ```
-  #include "mbed.h"
-  #include "swo.h"
+```cpp
+#include "mbed.h"
+#include "swo.h"
 
-  SWO_Channel SWO;
+using namespace sixtron;
 
-  int main() {
-     SWO.printf("\r\nHello World from SWO\r\n");
-  }
-  ```
+static SWO swo;
+
+int main() {
+   swo.printf("Hello, World!\n");
+}
+```
   
-# JLink SWO Viewer
-J-Link SWO Viewer is a tool which allows showing terminal output of the target performed via the SWO pin.
+To monitor SWO output via J-Link debug and trace probe, execute
+`JLinkSWOViewer` with your device name, e.g.:
 
-- In terminal : `JLinkSWOViewer`
+```sh
+JLinkSWOViewer -device STM32L496RG
+```
