@@ -20,11 +20,9 @@
 
 namespace sixtron {
 
-int SWO::_putc(int value) {
-  
-    //Use CMSIS_core_DebugFunctions. See core_cm3.h
-    ITM_SendChar(value);
-    return value;
+int SWO::_putc(int c) {
+    ITM_SendChar(c);
+    return c;
 }
 
 int SWO::_getc() {
