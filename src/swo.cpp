@@ -20,12 +20,14 @@
 
 namespace sixtron {
 
-int SWO::_putc(int c) {
+int SWO::_putc(int c)
+{
     ITM_SendChar(c);
     return c;
 }
 
-int SWO::_getc() {
+int SWO::_getc()
+{
     return -1;
 }
 
