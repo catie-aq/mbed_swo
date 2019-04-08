@@ -17,6 +17,8 @@
 #ifndef CATIE_SIXTRON_SWO_H_
 #define CATIE_SIXTRON_SWO_H_
 
+#include <mbed.h>
+
 namespace sixtron {
 
 class SWO : public Stream
