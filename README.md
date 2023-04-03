@@ -27,7 +27,7 @@ To get the SWO output on a **command line interface**, the command is
    ```sh
    JLinkSWOViewerCL -device STM32L496RG -cpufreq 80000000 -itmport 0
    ```
-* On Linux
+* On Linux:
    ```sh
    JLinkSWOViewer_CL -device STM32L496RG -cpufreq 80000000 -imtport 0
    ```
