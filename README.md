@@ -15,9 +15,19 @@ int main() {
 }
 ```
   
-To monitor SWO output via J-Link debug and trace probe, execute
+To open a separated **GUI** to monitor SWO output via a J-Link probe, execute
 `JLinkSWOViewer` with your device name, and CPU frequency e.g.:
 
 ```sh
 JLinkSWOViewer -device STM32L496RG -cpufreq 80000000
 ```
+
+To get the SWO output on a **command line interface**, the command is
+* On Windows:
+   ```sh
+   JLinkSWOViewerCL -device STM32L496RG -cpufreq 80000000 -itmport 0
+   ```
+* On Linux:
+   ```sh
+   JLinkSWOViewer_CL -device STM32L496RG -cpufreq 80000000 -imtport 0
+   ```
