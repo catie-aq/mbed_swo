@@ -11,7 +11,7 @@ using namespace sixtron;
 static SWO swo;
 
 int main() {
-   swo.printf("Hello, World!\n");
+    swo.printf("Hello, World!\n");
 }
 ```
   
@@ -23,11 +23,11 @@ JLinkSWOViewer -device STM32L496RG -cpufreq 80000000
 ```
 
 To get the SWO output on a **command line interface**, the command is
-* On Windows:
+- On Windows:
    ```sh
    JLinkSWOViewerCL -device STM32L496RG -cpufreq 80000000 -itmport 0
    ```
-* On Linux:
+- On Linux:
    ```sh
    JLinkSWOViewer_CL -device STM32L496RG -cpufreq 80000000 -imtport 0
    ```
