@@ -21,8 +21,7 @@
 
 namespace sixtron {
 
-class SWO : public Stream
-{
+class SWO: public Stream {
 public:
     SWO() {};
 

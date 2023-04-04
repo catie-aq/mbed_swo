@@ -1,7 +1,7 @@
 # Serial Wire Output (SWO) Library
 
 Usage:
-  
+
 ```cpp
 #include "mbed.h"
 #include "swo.h"
@@ -14,7 +14,7 @@ int main() {
    swo.printf("Hello, World!\n");
 }
 ```
-  
+
 To open a separated **GUI** to monitor SWO output via a J-Link probe, execute
 `JLinkSWOViewer` with your device name, and CPU frequency e.g.:
 
